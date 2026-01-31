@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-.container {
+.container1 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 body{
     color:rgb(255, 255, 255);
@@ -15,13 +15,33 @@ body{
     background:linear-gradient(rgb(146, 210, 230),rgb(99, 163, 86));
     font-family: Arial, sans-serif;
     line-height: 1.5;
+    padding: 5rem;
+}
+.body-about{
+    color:rgb(255, 255, 255);
+    background-color:aliceblue;
+    background:linear-gradient(rgb(146, 210, 230),rgb(99, 163, 86));
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.hot{
+    color:rgb(255, 255, 255);
+    background-color:aliceblue;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-repeat: no-repeat;
 }
 header{
     background-color: rgb(45, 59, 45);
-    background-image: url('C:\Users\stud.KOSGOS\Desktop\тур проект\картинки\горы.png');
-    color: aliceblue;
+    color: rgb(2, 15, 27);
     font-size: 1.5em;
     padding: 20px;
+    background-repeat: no-repeat;
+    background-image: url("/home/stud/Рабочий стол/jeeptour/Jeep-Tour-main/Jeep-Tour-main/картинки/ДЛЯЛОГО.webp");
 }
 
 .main {
@@ -30,7 +50,7 @@ header{
 }
 
 .logo{
-    padding: 20px;
+    padding: 50px;
     font-size: 1.5em;
 }
 
@@ -86,6 +106,8 @@ h2{
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
+    transition: all 0.3s;
+
 }
 
 .hot-tour{
@@ -97,8 +119,8 @@ h2{
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s;
     animation: ch-color 2s infinite;
-    transition:background-color 0.3s ease, transform 0.2s linear;
 }
 
 .btn {
@@ -109,7 +131,7 @@ h2{
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-    transition: all 0.3;
+    transition: all 0.3s;
     animation: pulse 2s infinite;
 } 
 
@@ -122,6 +144,13 @@ h2{
     color: rgb(40, 80, 40);
     text-align:left;
 }
+
+.h-z{
+    text-align: center;
+    font-size: 1.9em;
+    color:aliceblue;
+}
+
 @media (max-width: 1024px){
     .gallery-container{
         display: grid;
@@ -133,6 +162,14 @@ h2{
     }
     .gallery-img{
         display: grid;
+    }
+}
+
+@media (max-width: 425px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
 
@@ -176,4 +213,10 @@ h2{
     50% { background:linear-gradient(rgb(255, 255, 255), rgb(149, 218, 170))}
     75% {background:linear-gradient(rgb(149, 218, 170), rgb(255, 255, 255),rgb(149, 218, 170))}
     100% { background:linear-gradient(rgb(149, 218, 170), rgb(255, 255, 255))}
+}
+
+.card{
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
 }
