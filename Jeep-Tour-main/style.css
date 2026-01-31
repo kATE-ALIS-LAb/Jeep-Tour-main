@@ -16,7 +16,17 @@ body{
     font-family: Arial, sans-serif;
     line-height: 1.5;
     background-repeat: no-repeat;
+    height: 100vh;
 }
+
+.hot{
+    color:rgb(255, 255, 255);
+    background-color:aliceblue;
+    background:linear-gradient(rgb(146, 210, 230),rgb(99, 163, 86));
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    height: 100vh;
 header{
     background-color: rgb(45, 59, 45);
     background-image: url('C:\Users\stud.KOSGOS\Desktop\тур проект\картинки\горы.png');
@@ -196,3 +206,8 @@ h2{
     100% { background:linear-gradient(rgb(149, 218, 170), rgb(255, 255, 255))}
 }
 
+.card{
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
